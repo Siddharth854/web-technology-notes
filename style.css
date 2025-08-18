@@ -1,0 +1,13 @@
+h1{
+							color: red;
+							border: 2px dashed green;
+						}
+						h2, h3{
+							color: blue;
+							border: 2px solid hotpink;
+						}
+						.bak{
+							
+							background-color: hotpink;
+						}
+
