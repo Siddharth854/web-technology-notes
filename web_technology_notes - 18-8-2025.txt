@@ -1,0 +1,112 @@
+WEB tECHNOLOGY: 18.8.2025
+
+1). Inline CSS:
+	used to apply for individual elements
+	syntax:
+	property: value;  eg. color: red;   red -> constant0,255,0
+	
+				<!DOCTYPE html>
+			<html lang="en">
+			<head>
+				<meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<title>Inline css example</title>
+			</head>
+			<body>	
+				<h1 style=  "color: red; 
+							font-size:24px; 
+							width:200px;
+							background-color: cornflowerblue;">Heading h1</h1>
+				<h2 style="color: #0000FF">Heading h2</h2>
+				<h3 style="color: rgb(0,255,0)">Heading h3</h3>
+				<label>
+					Enter your Email
+				</label>
+				<input type="email" />
+			</br></br>
+			</br></br>
+				<label>
+					Enter your Password
+				</label>
+				<input type="password" />
+				</br></br>
+			</br></br>
+				<button>Submit</button>
+			</body>
+			</html>
+
+
+2). External / Internal CSS:
+	Syntax:
+		element{
+		property: value;
+		property: value;
+		}
+					<!DOCTYPE html>
+				<html lang="en">
+				<head>
+					<meta charset="UTF-8">
+					<meta name="viewport" content="width=device-width, initial-scale=1.0">
+					<title>Internal css</title>
+					<style>
+						h1{
+							color: red;
+							border: 2px dashed green;
+						}
+						h2, h3{
+							color: blue;
+							border: 2px solid hotpink;
+						}
+						.bak{
+							
+							background-color: hotpink;
+						}
+					</style>
+				</head>
+				<body>
+					<div class="bak">
+						<h1>heading h1</h1>
+						<h2>heading h2</h2>
+					</div>
+				</body>
+				</html>
+				
+				
+				
+3). External css:
+	html file 
+	
+				index.html 
+				<!DOCTYPE html>
+					<html lang="en">
+					<head>
+						<meta charset="UTF-8">
+						<meta name="viewport" content="width=device-width, initial-scale=1.0">
+						<title>Internal css</title>
+						<link rel="stylesheet" href="style.css">
+					</head>
+					<body>
+						<div class="bak">
+							<h1>heading h1</h1>
+							<h2>heading h2</h2>
+						</div>
+					</body>
+					</html>
+					
+					
+			    style.css:
+				
+						h1{
+							color: red;
+							border: 2px dashed green;
+						}
+						h2, h3{
+							color: blue;
+							border: 2px solid hotpink;
+						}
+						.bak{
+							
+							background-color: hotpink;
+						}
+						
+if inline and external css both applied at the same time then priority will be given to Inline css
