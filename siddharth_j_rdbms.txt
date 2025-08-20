@@ -1,0 +1,41 @@
+ER model for college database
+1. ca college contains many departments
+each department can offer any number of courses
+many instructors can work in a departments
+an instruct6or can only work in one departments
+for each departments there is a head
+an instructors can take any number of courses
+a course can only betaken by one instructors
+a student can enrol for any number of the courses
+each course can have any number of students
+
+students
+Department
+Instructor
+Course
+Enrollment
+
+create table college(student_id varchar(10) primary key, name char(100), department char(10), instructor char(100) Course varchar(25));
+
+INSERT INTO college (student_id, name, department, instructor, course)
+VALUES ('S001', 'John Doe', 'CS', 'Dr. Smith', 'BCA'),
+('S002','Siddharth Joshi', 'CS','Dr. Shilpa', 'MCA'),
+('S003','Harris Bolt','ECE','E Balagursamy','BTECH'),
+('S004','Michal Jordan','Commerce','Dr Johnson','MBA');
+
+create table college(College_ID int(100), College_Name varchar(100), Location varchar(30));
+create table Department(Dept_ID int(100), Dept_Name varchar(100), Instructor_ID int(100));
+create table Instructor(Instructor_ID int(100), Instructor_Name varchar(100));
+create table Course(Course_Id int(100), Course_Name varchar(100));
+CREATE TABLE Student (
+  Student_Id INT NOT NULL PRIMARY KEY,
+  Name VARCHAR(100) NOT NULL,
+  Enrollment_Year YEAR
+);
+
+CREATE TABLE Enrollment (
+  Enrollment_ID INT NOT NULL PRIMARY KEY,
+  Student_ID INT NOT NULL,
+  Course_ID INT NOT NULL,
+  Enrollment_Date DATE,
+  Grade VARCHAR(10));
