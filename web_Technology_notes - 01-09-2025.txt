@@ -1,0 +1,21 @@
+stores data using variable and constants
+variable -> let and var -> Value / data of different types
+constants -> const 
+
+Te variable defined using var are global variable and variables defned using let are local variable 
+
+you can not redeclare let once it is declared
+
+constants
+	allow to eclare the constant value. variable defined with constants will not be redeclared / redefined/ reassigned.
+	variable defined with const havwe block scope.
+	eg.  const pi = 3.1415
+	
+Naming convention
+	
+	var name can contain digit underscore dollor signs
+	name must be begin with  a letter
+	name can also begin witrh $ and _
+	variable name is case sensetive
+	Reserved keyords cannot be used as names.
+	
