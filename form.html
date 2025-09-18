@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="OUT">hello</h1>
+    <label>first no.</label><br>
+    <input id="inp1" placeholder="enter first no."><br>
+    <label>second no.</label><br>
+    <input id="inp2" placeholder="enter second no.">
+
+    <button onclick="add()">add</button>
+    <script>
+        function add()
+        {
+        let a,b,c;
+        a=document.getElementById("inp1").value;
+        b=document.getElementById("inp2").value;
+        c=parseInt(a)+parseInt(b);
+        document.getElementById("OUT").innerHTML = CZ;
+        }
+    </script>
+</body>
+</html>
