@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Student Form</title>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f7f7f7;
+      }
+      .container {
+        border: 1px solid black;
+        width: 400px;
+        padding: 20px;
+        border-radius: 10px;
+        background: white;
+      }
+      input {
+        width: 90%;
+        padding: 8px;
+        margin: 8px 0;
+      }
+      .submit {
+        width: 100%;
+        background-color: dodgerblue;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .display {
+        margin-top: 20px;
+        font-weight: bold;
+        color: darkgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form id="studentForm">
+        <label>Registration No.</label><br />
+        <input type="text" class="regno" /><br />
+        <label>Name</label><br />
+        <input type="text" class="name" /><br />
+        <label>Course</label><br />
+        <input type="text" class="course" /><br />
+        <input type="submit" class="submit" value="Submit" />
+      </form>
+      <p class="display"></p>
+    </div>
+
+    <script>
+      const form = document.getElementById("studentForm");
+      const display = document.querySelector(".display");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const regno = document.querySelector(".regno").value;
+        const name = document.querySelector(".name").value;
+        const course = document.querySelector(".course").value;
+
+        display.innerHTML = `
+          Registration No: ${regno}<br>
+          Name: ${name}<br>
+          Course: ${course}
+        `;
+      });
+    </script>
+  </body>
+</html>
